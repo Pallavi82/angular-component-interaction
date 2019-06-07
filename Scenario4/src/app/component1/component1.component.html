@@ -1,0 +1,6 @@
+<div>
+  <h1> {{message}} </h1>
+</div>
+<input #myInput type="text">
+<button (click)="onClick(myInput.value)">Go</button>
+<app-component2 (childEvent)="message=$event" [parentData]="myInput.value"></app-component2>

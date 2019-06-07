@@ -1,0 +1,4 @@
+
+<input #myInput type="text">
+<button (click)="onClick(myInput.value)">Go</button>
+<app-component2 [parentData]="myInput.value"></app-component2>

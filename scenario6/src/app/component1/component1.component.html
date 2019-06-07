@@ -1,0 +1,7 @@
+<p>
+  component1 works!
+  {{message}}
+</p>
+
+<app-component3 (childEvent)="message=$event"> </app-component3>
+<app-component2 [parentData]="message"> </app-component2>
